@@ -38,12 +38,12 @@ def contact():
     if request.method == "POST":
         flash("Thanks {}, we have received your message!".format(
             request.form.get("name")))
-    return render_template("contact.html", page_title="contact")
+    return render_template("contact.html", page_title="Contact")
 
 
 @app.route("/careers")
 def careers():
-    return render_template("careers.html", page_title="careers")
+    return render_template("careers.html", page_title="Careers")
 
 
 if __name__ == "__main__":
